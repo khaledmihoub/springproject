@@ -1,12 +1,20 @@
 package com.esprit.springproject.entities;
 
 import com.esprit.springproject.entities.enumm.Couleur;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table( name = "Piste")
 public class Piste implements Serializable {
     @Id
