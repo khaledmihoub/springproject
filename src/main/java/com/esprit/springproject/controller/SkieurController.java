@@ -37,4 +37,16 @@ public class SkieurController {
     public void deleteSkieur(@PathVariable("id") Integer id) {
         skservice.deleteSkieur(id);
     }
+
+    @PostMapping("/add-skieur-abonn")
+    public void addSkieur3(@RequestBody Long s,@RequestBody Long p ) {
+        skservice.assignSkieurToPiste(s,p);
+    }
+
+
+
+
+
+
+
 }

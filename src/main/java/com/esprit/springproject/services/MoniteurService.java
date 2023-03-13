@@ -34,4 +34,12 @@ MoniteurRepository mr ;
     public void deleteMoniteur(Integer idMoniteur) {
         mr.deleteById(idMoniteur);
     }
+
+
+   public  Moniteur addMoniteurAndAssignToCours(Moniteur moniteur){
+       Moniteur m= this.addMoniteur(moniteur);
+       return m;
+    };
+
+
 }

@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 
 public interface PisteRepository extends JpaRepository<Piste, Integer> {
+    public Piste findByNumPiste(Long numPiste);
 }
