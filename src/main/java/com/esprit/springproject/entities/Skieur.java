@@ -30,7 +30,7 @@ public class Skieur implements Serializable {
     @OneToOne
     private Abonnement abonnement;
     @ManyToMany
-    private Set<Piste> pistes;
+     private Set<Piste> pistes;
     @OneToMany(mappedBy = "skieur")
     private Set<Inscription> inscriptions;
 }
